@@ -1,13 +1,11 @@
 package com.myapp.mlmapplication
 
-import android.app.ProgressDialog
-import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
 import com.myapp.mlmapplication.RetrofitInstance.retrofit
 import com.myapp.mlmapplication.databinding.ActivityLoginBinding
@@ -42,11 +40,9 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this@LoginActivity,RegisterActivity::class.java))
         }
 
-
-
     }
 
-    fun loginUser(){
+    private fun loginUser(){
         binding.progressBar.visibility= View.VISIBLE
         val email = binding.emailEdittext.text.toString().trim()
         val password = binding.passwordEdittext.text.toString().trim()
@@ -75,7 +71,7 @@ class LoginActivity : AppCompatActivity() {
                         sharedPreferencesManager.saveToken(token)
                     }
                     Toast.makeText(this@LoginActivity,message,Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this@LoginActivity,MainActivity::class.java))
+                    startActivity(Intent(this@LoginActivity,UserListActivity::class.java))
                     finish()
                     binding.progressBar.visibility=View.GONE
 

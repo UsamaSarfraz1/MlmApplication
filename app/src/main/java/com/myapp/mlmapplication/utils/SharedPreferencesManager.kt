@@ -23,6 +23,9 @@ class SharedPreferencesManager(private val context: Context) {
         sharedPreferences.edit().putString(KEY_TOKEN,token).apply()
     }
 
+    fun getTokken() : String?{
+        return sharedPreferences.getString(KEY_TOKEN,"")
+    }
     fun clearToken(){
         sharedPreferences.edit().remove(KEY_TOKEN).apply()
     }

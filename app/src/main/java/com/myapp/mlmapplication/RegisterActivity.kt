@@ -47,7 +47,7 @@ class RegisterActivity : AppCompatActivity() {
             Toast.makeText(this,"Enter name",Toast.LENGTH_SHORT).show()
             return
         }
-        else if (Patterns.EMAIL_ADDRESS.matcher(request.email).matches()){
+        else if (!Patterns.EMAIL_ADDRESS.matcher(request.email).matches()){
             Toast.makeText(this,"Enter email",Toast.LENGTH_SHORT).show()
             binding.progressBar.visibility=View.GONE
             return
