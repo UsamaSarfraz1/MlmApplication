@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lets Start with Register!"
+        android:text="Create User"
         android:layout_marginBottom="20dp"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -131,7 +131,7 @@
                 app:startIconTint="@color/color_theme"
                 android:layout_marginTop="10dp"
                 app:startIconDrawable="@drawable/ic_baseline_account_tree_24"
-                android:hint="Referral Code ">
+                android:hint="Role ">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/roll_edittext"
@@ -146,7 +146,8 @@
                 android:layout_height="65dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/color_theme"
-                android:text="Register"
+                android:text="Submit"
+                android:textAllCaps="false"
                 android:textStyle="bold"
                 app:cornerRadius="50pt" />
 
@@ -157,17 +158,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:visibility="gone" />
-            <TextView
-                android:id="@+id/btn_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:text="Already have an account? Sign in"
-                android:textColor="#3F51B5"
-                android:textSize="16dp"
-                android:textStyle="bold" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

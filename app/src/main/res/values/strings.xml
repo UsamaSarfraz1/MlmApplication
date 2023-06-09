@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MlmApplication</string>
+    <string name="users">Users</string>
+    <string name="create_user">Create User</string>
+    <string name="panel_user">Panel User</string>
+    <string name="app_user">App User</string>
 </resources>

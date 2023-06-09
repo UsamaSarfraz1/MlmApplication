@@ -40,7 +40,7 @@ class RegisterActivity : AppCompatActivity() {
             password = binding.passwordEdittext.text.toString().trim(),
             phone = binding.phoneEdittext.text.toString().trim(),
             name = binding.nameEdittext.text.toString().trim(),
-            refer_by = binding.referelEdittext.text.toString().trim()
+            refer_by = binding.rollEdittext.text.toString().trim()
         )
         if (request.name.isEmpty()){
             binding.progressBar.visibility=View.GONE

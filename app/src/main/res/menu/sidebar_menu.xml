@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_user"
+            android:title="@string/users"
+            android:icon="@drawable/user"
+        />
+    <item android:id="@+id/nav_create_user"
+        android:title="@string/create_user"
+        android:icon="@drawable/add_user"
+        />
+    <item android:id="@+id/nav_panel_user"
+        android:title="@string/panel_user"
+        android:icon="@drawable/user_panel"
+        />
+    <item android:id="@+id/nav_app_user"
+        android:title="@string/app_user"
+        />
+</menu>
