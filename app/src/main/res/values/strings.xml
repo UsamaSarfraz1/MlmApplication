@@ -4,4 +4,6 @@
     <string name="create_user">Create User</string>
     <string name="panel_user">Panel User</string>
     <string name="app_user">App User</string>
+    <string name="navigation_drawer_open">open drawer</string>
+    <string name="navigation_drawer_close">close drawer</string>
 </resources>

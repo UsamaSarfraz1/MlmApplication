@@ -1,18 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/nav_user"
+     <item android:title="Dashboard" android:id="@+id/nav_dashboard"/>
+    <item android:title="User" android:icon="@drawable/user_panel">
+        <menu>
+            <group>
+                <item android:id="@+id/nav_create_user"
+                    android:title="@string/create_user"
+                    />
+                <item android:id="@+id/nav_panel_user"
+                    android:title="@string/panel_user"
+
+                    />
+                <item android:id="@+id/nav_app_user"
+                    android:title="@string/app_user"
+                    />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Commission">
+        <menu>
+            <group>
+                <item android:title="Tree and Self"/>
+                <item android:title="Monthly Cashback"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Referral Levels"/>
+    <item android:title="Manage Bonus">
+        <menu>
+            <group>
+                <item android:title="Matching"/>
+                <item android:title="Family"/>
+                <item android:title="Performance"/>
+                <item android:title="Monthly"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Payments">
+        <menu>
+            <group>
+                <item android:title="Withdraw List"/>
+                <item android:title="Mobile Recharge"/>
+            </group>
+        </menu>
+    </item>
+    <!--<item android:id="@+id/nav_user"
             android:title="@string/users"
             android:icon="@drawable/user"
-        />
-    <item android:id="@+id/nav_create_user"
-        android:title="@string/create_user"
-        android:icon="@drawable/add_user"
-        />
-    <item android:id="@+id/nav_panel_user"
-        android:title="@string/panel_user"
-        android:icon="@drawable/user_panel"
-        />
-    <item android:id="@+id/nav_app_user"
-        android:title="@string/app_user"
-        />
+        />-->
+
+
 </menu>
